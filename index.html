@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logopestaña.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@200;300;500;800&family=Montserrat:ital,wght@0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    <meta name="description" content="Bienvenidos al sitio web de Yerba Buena. Aqui encontrarás toda la info sobre Yerba Buena, incluyendo locales comerciales, eventos, turismo y mas.">
+    <meta name="keywords" content="Yerba Buena, Comercios Yerba Buena, locales Yerba Buena, turismo Tucumán">
+    <title>YerbaBuena.com</title>
+</head>
+<body>
+    <header id="header">
+            <h1 class="intro__titulo">YerbaBuena.com</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><strong>INICIO</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#comercios"><strong>COMERCIOS</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/emprendedores.html"><strong>EMPRENDEDORES</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/eventos.html"><strong>EVENTOS</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/deportes.html"><strong>ACTIVIDAD DEPORTIVA</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/tursimo.html"><strong>TURISMO</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html"><strong>CONTACTO</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/page1.html"><strong>INFO PUBLICIDAD</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/page2.html"><strong>MAS INFO</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/agregados.html"><strong>MORE JS</strong></a>
+                </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <section id="intro">
+
+        <span class="intro__texto-inicial">En <strong>YerbaBuena.com</strong> encontrarás toda la info sobre comercios, eventos culturales, actividades, eventos deportivos, tursimo y mucho mas del jardín de Tucumán.</span>
+    </section>
+
+    <section id="imagenes">
+        <div class="foto1"></div>
+        <div class="foto2"></div>
+        <div class="foto3"></div>
+        <div class="foto4"></div>
+        <div class="foto5"></div>
+        <div class="foto6"></div>
+        <div class="foto7"></div>
+        <div class="foto8"></div>
+    </section>
+
+    <main id="comercios">
+        <div class="comercios__locales">
+            <img src="img/drugstore.jpg" alt="Drugstores">
+            <p class="comercios__locales__nombre"><strong>Drusgstores</strong></p>
+            <button id="but1">Ingresar </button>
+
+            <script>
+                let boton1 = document.getElementById("but1")
+                boton1.onclick = ()=>{
+                alert("Ingresando a Drusgstores")
+                }
+            </script>
+        </div>
+            
+        <div class="comercios__locales">
+                <img src="img/tabaqueria.jpg" alt="Tabaquerias">
+            <p class="comercios__locales__nombre"><strong>Tabaquerias</strong></p>
+            <button id = "but2">Ingresar</button>
+        </div>
+        <script>
+            let boton2 = document.getElementById("but2")
+            boton2.onclick = () =>{
+            alert("Ingresando a Tabaquerias")
+            }
+        </script>
+
+        <div class="comercios__locales">
+            <img src="img/tecnologia.jpg" alt="Tecnología">
+            <p class="comercios__locales__nombre"><strong>Tecnología</strong></p>
+            <button id = "but3">Ingresar</button>
+            </div>
+            <script>
+                let boton3 = document.getElementById("but3")
+                boton3.onclick = () =>{
+                alert("Ingresando a Tecnología")
+                }
+            </script>
+
+        <div class="comercios__locales">
+            <img src="img/descarga.jpg" alt="Bares y Restaurantes">
+            <p class="comercios__locales__nombre"><strong>Bares y Restaurantes</strong></p>
+            <button id="but4">Ingresar</button>
+        </div>
+        <script>
+            let boton4 = document.getElementById("but4")
+            boton4.onclick = () =>{
+            alert("Ingresando a Bares y restaurantes")
+            }
+        </script>
+
+        <div class="comercios__locales">
+            <img src="img/ferreteria.png" alt="Ferreterias">
+            <p class="comercios__locales__nombre"><strong>Ferreterías</strong></p>
+            <button id="but5">Ingresar</button>
+        </div>
+        <script>
+            let boton5 = document.getElementById("but5")
+            boton5.onclick = () =>{
+            alert("Ingresando a Ferreterias")
+            }
+        </script>
+
+        <div class="comercios__locales">
+            <img src="img/forrajeria.png" alt="Forrajerias">
+            <p class="comercios__locales__nombre"><strong>Forrajerías</strong></p>
+            <button id="but6">Ingresar</button>
+        </div>
+        <script>
+            let boton6 = document.getElementById("but6")
+            boton6.onclick = () =>{
+            alert("Ingresando a Forrajerias")
+            }
+        </script>
+
+        <div class="comercios__locales">
+            <img src="img/gym.jpeg" alt="Gimnasios">
+            <p class="comercios__locales__nombre"><strong>Gimnasios</strong></p>
+            <button id="but7">Ingresar</button>
+        </div>
+        <script>
+            let boton7 = document.getElementById("but7")
+            boton7.onclick = () =>{
+            alert("Ingresando a Gimnasios")
+            }
+        </script>
+
+        <div class="comercios__locales">
+            <img src="img/indumentaria.png" alt="Indumentaria">
+            <p class="comercios__locales__nombre"><strong>Indumentaria</strong></p>
+            <button id="but8">Ingresar</button>
+        </div>
+        <script>
+            let boton8 = document.getElementById("but8")
+            boton8.onclick = () =>{
+            alert("Ingresando a Indumentaria")
+            }
+        </script>
+
+        <div class="comercios__locales">
+            <img src="img/supermercado.jpg" alt="Supermercados">
+            <p class="comercios__locales__nombre"><strong>Supermercados</strong></p>
+            <button id="but9">Ingresar</button>
+        </div>
+        <script>
+            let boton9 = document.getElementById("but9")
+            boton9.onclick = () =>{
+            alert("Ingresando a Supermercados")
+            }
+        </script>
+
+        <div class="comercios__locales">
+            <img src="img/veterinaria.jpg" alt="Veterinarias">
+            <p class="comercios__locales__nombre"><strong>Veterinarias</strong></p>
+            <button id="but10">Ingresar</button>
+        </div>
+        <script>
+            let boton10 = document.getElementById("but10")
+            boton10.onclick = () =>{
+            alert("Ingresando a Veterinarias")
+            }
+        </script>
+        
+    </main>
+    <footer>
+        <ul class="footer__ul">
+            <li><a href="#comercios">Comercios</a></li>
+            <li><a href="pages/emprendedores.html">Emprendedores</a></li>
+            <li><a href="pages/eventos.html">Eventos</a></li>
+            <li><a href="pages/tursimo.html">Turismo</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+        </ul>
+
+        <div>
+        <a href="https://www.yerbabuena.gob.ar/" target="_blank">Sitio Municipalidad de Yerba Buena</a>
+        </div>
+        <div class="gobierno">
+        <a href="https://www.tucuman.gob.ar/" target="_blank">Sitio Gobierno de Tucumán</a>
+        </div>
+        <div class="footer__derechos">
+            <p class="footer__derechos__p">Todos los derechos reservados para <strong>YerbaBuena.com</strong></p>
+        </div>
+    </footer>
+
+    <a href="#">
+        <img src="img/whatsapp.png" alt="" class="wp">
+    </a>
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

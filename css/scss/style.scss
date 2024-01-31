@@ -1,0 +1,347 @@
+/*GENERAL*/
+h1 {
+    color: antiquewhite;
+    background-color: #2f4f4f;
+  }
+  
+  h2 {
+    color: antiquewhite;
+    background-color: #2f4f4f;
+  }
+  
+  h3 {
+    color: antiquewhite;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  header {
+    background-color: #129112;
+    background-repeat: none;
+    position: sticky;
+    top: 0;
+    border: solid 2px;
+    border-color: antiquewhite;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: antiquewhite;
+  }
+  
+  footer {
+    background-color: #2f4f4f;
+    padding-top: 10rem;
+  }
+  
+  body {
+    font-family: "Dancing Script", cursive;
+    font-family: "Dosis", sans-serif;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .header__nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .header__nav li:hover {
+    background-color: #006400;
+    border: solid 2px #006400;
+  }
+  
+  .header__nav li {
+    font-size: 1.1rem;
+    background-color: #2f4f4f;
+    border: solid 2px;
+    border-color: antiquewhite;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  
+  .header__logo {
+    display: block;
+    margin: 0 auto;
+    border: solid 1px black;
+    width: 150px;
+    border-radius: 10%;
+  }
+  
+  #header img {
+    width: 150px;
+  }
+  
+  p {
+    color: antiquewhite;
+  }
+  
+  /*INDEX*/
+  #intro {
+    padding-bottom: 3rem;
+    background-color: #2f4f4f;
+  }
+  
+  span {
+    font-size: 1.5rem;
+  }
+  
+  .intro__titulo {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    color: antiquewhite;
+    background-color: #129112;
+  }
+  
+  .intro__texto-inicial {
+    color: aliceblue;
+    display: block;
+    text-align: center;
+  }
+  
+  #imagenes {
+    display: grid;
+    grid-template-areas: "foto1 foto1 foto2 foto2 foto2" "foto3 foto3 foto2 foto2 foto2" "foto3 foto3 foto2 foto2 foto2" "foto4 foto5 foto6 foto7 foto8";
+    gap: 5px;
+    background-color: #2f4f4f;
+  }
+  
+  .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8 {
+    max-width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .foto1 {
+    background-image: url(../img/yb1.png);
+    grid-area: foto1;
+  }
+  
+  .foto2 {
+    background-image: url(../img/yb2.jpg);
+    grid-area: foto2;
+    height: 100%;
+    background-position: top;
+  }
+  
+  .foto3 {
+    background-image: url(../img/yb3.jpg);
+    grid-area: foto3;
+    background-position: top;
+  }
+  
+  .foto4 {
+    background-image: url(../img/yb4.jpg);
+    grid-area: foto4;
+  }
+  
+  .foto5 {
+    background-image: url(../img/yb5.jpg);
+    grid-area: foto5;
+  }
+  
+  .foto5 {
+    background-image: url(../img/yb5.jpg);
+    grid-area: foto5;
+  }
+  
+  .foto6 {
+    background-image: url(../img/yb6.jpg);
+    grid-area: foto6;
+  }
+  
+  .foto7 {
+    background-image: url(../img/yb7.jpg);
+    grid-area: foto7;
+  }
+  
+  .foto8 {
+    background-image: url(../img/yb8.jpg);
+    grid-area: foto8;
+  }
+  
+  @media (max-width: 991px) {
+    #imagenes {
+      grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8";
+    }
+    .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8 {
+      max-width: 100%;
+      height: 300px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  @media (max-width: 767px) {
+    #imagenes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8 {
+      height: 200px;
+      width: 250px;
+    }
+  }
+  /*ENFOQUE DESKTOP FIRST*/
+  #comercios {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2f4f4f;
+    /*Tambien puedo usar la propiedad flex flow: poniendo como primer valor el flex-direction (en este caso row) y despues de un espacio el valor del flex-wrap (en este caso wrap)*/
+  }
+  #comercios div {
+    margin-right: 10px;
+  }
+  
+  .comercios__locales button:hover {
+    background-color: rgb(5, 66, 17);
+  }
+  .comercios__locales button:hover:active {
+    background-color: rgb(21, 168, 45);
+  }
+  
+  #imagenes {
+    border: solid 1px;
+  }
+  
+  .comercios__locales {
+    background-color: rgba(91, 170, 89, 0.623);
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 1rem;
+    border: solid 2px white;
+  }
+  
+  .comercios__locales__nombre {
+    background-color: #2f4f4f;
+    border-radius: 15px;
+  }
+  
+  .comercios__locales img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    border: solid 1px;
+    border-radius: 15px;
+  }
+  .comercios__locales button {
+    border-radius: 15px;
+  }
+  
+  .wp {
+    width: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+  }
+  
+  .footer__derechos {
+    background-color: dimgray;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .footer__ul {
+    margin-bottom: 5rem;
+  }
+  
+  .gobierno {
+    margin-bottom: 5rem;
+  }
+  
+  /*CONTACTO*/
+  .form__submit {
+    margin-top: 20px;
+  }
+  
+  form {
+    padding: 1rem;
+    background-color: brown;
+  }
+  
+  /*DEPORTES*/
+  table {
+    margin-bottom: 2rem;
+    background-color: antiquewhite;
+  }
+  
+  /*EMPRENDEDORES*/
+  iframe {
+    width: 750px;
+  }
+  
+  .artistas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #2f4f4f;
+  }
+  
+  .artistas div {
+    margin-right: 1rem;
+  }
+  
+  /*TURISMO*/
+  #turismo {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #turismo div {
+    margin-right: 30px;
+  }
+  
+  .eventos__turismo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+  .eventos__turismo p {
+    font-size: 1.5rem;
+    color: black;
+  }
+  .eventos__turismo img {
+    width: 450px;
+  }
+  
+  .map {
+    margin-top: 7rem;
+  }
+  
+  /*EVENTOS*/
+  .eventos h3 {
+    font-size: 2rem;
+  }
+  
+  #eventos {
+    display: grid;
+    grid-template-columns: 25rem 15rem 15rem;
+    grid-template-rows: 7rem 7rem 7rem;
+    margin-bottom: 4rem;
+  }
+  #eventos div {
+    border: solid 1px;
+    padding: 30px;
+    text-align: center;
+    background-color: burlywood;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+
+  
